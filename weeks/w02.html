@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+    <img src="/images/hrivera.jpg" alt="Picture of Hugo Rivera">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Week 02 Notes</h1>
+    <h3>Class basic syntax:</h3>
+    <p>In OOP, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions or methods).</p>
+
+<h3>Classic Class</h3>
+<p>
+class MyClass { <br>
+  // class methods<br>
+  constructor() { ... }<br>
+  method1() { ... }<br>
+  method2() { ... }<br>
+  method3() { ... }<br>
+  ...
+}
+</p>
+<h3>Class expression</h3>
+<p>
+let User = class {  //or class Name {<br>
+  sayHi() {<br>
+    alert("Hello");<br>
+  }<br>
+};
+</p>
+
+<p>Assign values from user: prompt("Question", "Default");</p>
+
+<h3>“This” </h3>
+
+<p>It’s common that an object method needs to access the information stored in the object to do its job. To access the object, a method can use the “this” keyword. The value of this is the object “before dot”, the one used to call the method.</p>
+<p>Arrow functions are special: they don’t have their “own” this.</p>
+
+<h3>Export and Import of functions</h3>
+
+<p>Export and import directives have several syntax variants. We can label any declaration as exported by placing export before it, be it a variable, function or a class. <strong>No semicolons after export class/function.</strong> Also, we can put export separately.</p>
+<p>export {sayHi, sayBye}</p>
+<p>Usually, we put a list of what to import in curly braces import {...}, like this:</p>
+<p>import {sayHi, sayBye} from './say.js';</p>
+<p>But if there’s a lot to import, we can import everything as an object using import * as <obj>. Why explicit? So can be short names and better overview. But don’t be afraid.
+Import as and Export as gives a name to the functions.
+Modules provide a special export default (“the default export”) syntax to make the “one thing per module” way look better. There may be only one export default per file…And then import it without curly braces.</p>
+<table>
+<tr>
+    <th>Named export</th>
+    <th>Default export</th>
+</tr>
+<tr>
+    <td>export class User {...}</td>
+    <td>export default class User {...}</td>
+</tr>
+<tr>
+    <td>import {User} from ...</td>
+    <td>import User from ...</td>
+</tr>
+</table>
+
+<h3>Summary</h3>
+<h4>Export:</h4>
+<ul>
+    <li>Before declaration of a class/function/…:</li>
+    <p>export [default] class/function/variable ...</p>
+    <li>Standalone export:</li>
+    <p>export {x [as y], ...}.</p>
+    <li>Re-export:</li>
+    <p>export {x [as y], ...} from "module"</p>
+    <li>export * from "module" (doesn’t re-export default).</li>
+    <p>export {default [as y]} from "module" (re-export default).</p>
+</ul>
+
+<h4>Import:</h4>
+<ul>
+    <li>Importing named exports:</li>
+    <p>import {x [as y], ...} from "module"</p>
+    <li>Importing the default export:</li>
+    <p>import x from "module"</p>
+    <p>import {default as x} from "module"</p>
+    <li>Import all:</li>
+    <p>import * as obj from "module"</p>
+    <li>Import the module (its code runs), but do not assign any of its exports to variables:</li>
+    <p>import "module"</p>
+</ul>
+
+<p>We can put import/export statements at the top or at the bottom of a script, that doesn’t matter.</p>
+
+<h4>Questions:</h4>
+<p>Is there any website similar to freecodecamp that have exercises for “this”?</p>
+
+
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

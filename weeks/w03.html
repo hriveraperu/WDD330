@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+    <img src="/images/hrivera.jpg" alt="Picture of Hugo Rivera">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Week 03 Notes</h1>
+
+    <h3>Basic usability Principles:</h3>
+<ul> 
+    <li>Learnability: How easily first-time users complete basic tasks.</li>
+    <li>Efficiency: How quickly users perform basic tasks once they’ve learned the design.</li>
+    <li>Memorability: The ability of users to remember how to use the system.</li>
+    <li>Errors: The amount and severity of errors users make and how easily they can correct them.</li>
+    <li>Satisfaction: How pleasant the experience of using the design was.</li>
+</ul>
+
+<h3>10 tested UX design principles</h3>
+<ol>
+    <li>Content Prioritization</li>
+Get the attention of the user in less than 8 seconds. Less is more. Keep a minimum of elements and do simple. Only essential, prioritize content.
+    <li>Make Navigation Intuitive</li>
+“If the user can’t use it, it doesn’t work.”– Susan Dray. User should navigate without help with clear pathways. Don’t make them change between pages, they should know where they are without wondering how they got there, or what they are to do next. 
+    <li>Touchscreen Target Sizes</li>
+Make interface elements big enough for the fingers (thumbs). 44 pixels wide x 44 pixels tall for Apple. 9mm/34px with a minimum touch target size of 7mm/26px for Windows phone. Also spacing is important.
+    <li>Provide User Control</li>
+Allow them to personalize, change, control, cancel the content. Provide warnings but let the user decide. Status and other types of feedback to let know the user. If sign up is required, first let them demo before registration.
+    <li>Legible Text Content</li>
+Readability is important. Use clear, simple layout to deliver your message. Legibility and space conservation important. Must bigger than 16 pixels (or 11 points). Don’t use neither large font size. Content should be accommodated for smaller screens while maintaining all the necessary information. 30–40 characters per line for mobile.
+    <li>Make Interface Elements Clearly Visible</li>
+Use the right contrast ratio so content can be seen clearly. 
+    <li>Hand Position Controls</li>
+49% of people rely on one thumb. Common features should be placed in easily accessible regions. Delete buttons should be placed in areas harder to reach. Accessibility behavioral features should be made available. Left and Right handed also considered.
+    <li>Minimize Data Input</li>
+Minimize the need to enter data. Shortening forms, removing unnecessary fields and using ‘remember me’ options. Autocomplete, recent search history and location detection. Numeric keypad for faster input of phone numbers. 
+    <li>Create a Seamless Experience</li>
+Functional, flexible, and responsive mobile designs. Focus on key user goals by reducing friction, minimizing steps and page loads to decrease interaction time. Make content accessible even without an online connection and provide alternative paths to avoid dead-ends. Make use of the mobile phone’s features, like the camera to scan barcodes, GPS for identifying locations and touch ID in place of passcodes to simplify journeys. Users appreciate smooth interactions with designs and are satisfied when their needs are met effortlessly. Synchronization across devices is a key priority for creating seamless experiences. It makes users feel that their workflow isn’t interrupted and aren’t burdened by having to make the effort of transferring data. 
+    <li>Test Your Design</li>
+Test early. Test often. Usability testing is essential such as features, layouts and variations using user-centered approach by testing with real users. The earlier you discover your problems, the easier and cheaper it is to fix them.
+</ol>
+
+<h3>Conclusion</h3>
+<p> In order to keep up with the fast advancements in technology and shift to smartphone adoption, designing mobile experiences needs to implement usability principles. The future of smartphone technologies is peaking in development and users are unforgiving with lagging systems. Delivering extraordinary experiences for users to experience is the way forward.</p>
+
+<h3>Points of Note:</h3>
+<ul>
+    <li>In 2015, more than 25 percent of the world’s population used a smartphone.</li>
+    <li>It is imperative to create user-centered designs to improve interactions and enhance user satisfaction.</li>
+    <li>Design is more than just good aesthetics.</li>
+    <li>To keep your users engaged, you have to keep the interface at a minimum.</li>
+    <li>Users should intuitively be able to navigate through your app via clear pathways and be able to complete all primary tasks without requiring any explanations.</li>
+    <li>Interface elements need to be big enough to capture actions on touch screens.</li>
+    <li>Users should be able to make decisions to personalize their journeys.</li>
+    <li>If users can’t read your content, your design doesn’t work.</li>
+    <li>Accessibility behavioural features should be made available to users to make navigation and use easier.</li>
+    <li>Minimize the need to enter data.</li>
+    <li>When it comes to creating online journeys the ultimate goal is to create a seamless experience, across all devices.</li>
+    <li>Test early. Test often.</li>
+</ul>
+
+<h3>APIs</h3>
+<p>Application Programming Interfaces (APIs) are constructs made available in programming languages to allow developers to create complex functionality more easily.</p>
+
+<h4>Browser APIs are built into your web browser and are able to expose data from the browser and surrounding computer environment and do useful complex things with it.</h4>
+<h4>Third-party APIs are not built into the browser by default, and you generally have to retrieve their code and information from somewhere on the Web.</h4>
+
+<h3>What can APIs do?</h3>
+<p>Common browser APIs: APIs for manipulating documents, fetch data from the server, drawing and manipulating graphics, Audio and Video API, Device APIs, Client-side storage APIs</p>
+<p>Common third-party APIs</p>
+
+<h3>How do APIs work?</h3>
+<ul>
+    <li>They are based on objects</li>
+    <li>They often use events to handle changes in state</li>
+    <li>They have additional security mechanisms where appropriate</li>
+</ul>  
+
+<h3>Summary</h3>
+<p>At this point, you should have a good idea of what APIs are, how they work, and what you can do with them in your JavaScript code. You are probably excited to start actually doing some fun things with specific APIs, so let's go! Next up, we'll look at manipulating documents with the Document Object Model (DOM).</p>
+
+<h3>Scheduling: setTimeout and setInterval</h3>
+<ul>
+    <h4>setTimeout</h4>
+    <li>Allows us to run a function once after the interval of time.</li>
+    <p>let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)</p>
+    <li>func|code</li>
+    <p>Function or a string of code to execute. Usually, that’s a function. For historical reasons, a string of code can be passed, but that’s not recommended.</p>
+    <li>delay</li>
+    <p>The delay before run, in milliseconds (1000 ms = 1 second), by default 0.</p>
+    <li>arg1, arg2…</li>
+    <p>Arguments for the function</p>
+</ul>
+
+<ul>
+    <h4>setInterval</h4>
+    <li>Allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.</li>
+    <li>Canceling with clearTimeout</li>
+    <p>let timerId = setTimeout(...);</p>
+    <p>clearTimeout(timerId);</p>
+    <li>setInterval</li>
+    <p>let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</p>
+    <li>Nested setTimeout</li>
+    <p>/** instead of: 
+        let timerId = setInterval(() => alert('tick'), 2000);<br>
+        */<br>
+        
+        let timerId = setTimeout(function tick() {<br>
+          alert('tick');<br>
+          timerId = setTimeout(tick, 2000); // (*)<br>
+        }, 2000);</p>
+    <li>Zero delay setTimeout</li>
+    <p>setTimeout(() => alert("World")); <br>
+        alert("Hello");
+    </p>
+</ul>
+
+<h3>Summary</h3>
+<p>Methods setTimeout(func, delay, ...args) and setInterval(func, delay, ...args) allow us to run the func once/regularly after delay milliseconds.</p>
+<p>To cancel the execution, we should call clearTimeout/clearInterval with the value returned by setTimeout/setInterval.</p>
+<p>Nested setTimeout calls are a more flexible alternative to setInterval, allowing us to set the time between executions more precisely.</p>
+<p>Zero delay scheduling with setTimeout(func, 0) (the same as setTimeout(func)) is used to schedule the call “as soon as possible, but after the current script is complete”.</p>
+<p>The browser limits the minimal delay for five or more nested calls of setTimeout or for setInterval (after 5th call) to 4ms. That’s for historical reasons.</p>
+<p>Please note that all scheduling methods do not guarantee the exact delay.</p>
+
+<p>For example, the in-browser timer may slow down for a lot of reasons:</p>
+<ul>
+    <li>The CPU is overloaded.</li>
+    <li>The browser tab is in the background mode.</li>
+    <li>The laptop is on battery saving mode.</li>
+    <li>All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance settings.</li>
+</ul>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
